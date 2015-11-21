@@ -6,7 +6,7 @@
    - Add .travis.yml file to repo with content: 
       language: ruby
       rvm:
-        - 2.0.0
+        - 2.2.2
       env:
         - DB=postgresql
       script:
