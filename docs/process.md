@@ -15,5 +15,11 @@
         - bundle exec rake db:create RAILS_ENV=test
         - bundle exec rake db:migrate
         - bundle exec rake db:test:prepare
-4.
+4. Add Bourbon (https://github.com/thoughtbot/bourbon)
+   - Add to gemfile: gem 'bourbon'
+   - Run: bundle install
+   - In app/assets/stylesheets, rename application.css to application.scss
+   - In application.scss, delete require_tree and require_self, and add: @import "bourbon";
+   - Note: All additional stylesheets should be imported below Bourbon.
+5. 
 
