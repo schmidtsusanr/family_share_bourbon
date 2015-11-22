@@ -37,4 +37,8 @@
    - Generate devise: rails g devise:install
    - Add action mailer default url options to config/environments/development.rb: config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
    - Add notice actions (flashes) to application.html.erb above yield, add _flashes.scss stylesheetm, and add @import "flashes"; to _base.scss.
-   -
+   - Setup User model: rails g devise user
+   - Add sign-up and login links to application.html.erb
+   - Add authentication to each page in app/controllers/application_controller.rb: before_action :authenticate_user!
+   - Generate devise views: rails generate devise:views
+9. 
