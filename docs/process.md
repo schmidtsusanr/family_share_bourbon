@@ -21,5 +21,8 @@
    - In app/assets/stylesheets, rename application.css to application.scss
    - In application.scss, delete require_tree and require_self, and add: @import "bourbon";
    - Note: All additional stylesheets should be imported below Bourbon.
-5. 
+5. Add Neat (https://github.com/thoughtbot/neat#requirements)
+   - Add to gemfile: gem 'neat'
+   - Run: bundle install
+   - In application.scss, add after bourbon: @import "neat";
 
