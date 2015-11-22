@@ -30,7 +30,8 @@
    - Navigate to app/assets/stylesheets, then run: bitters install
    - In application.scss, between bourbon and neat, add: @import "base/base";
    - In _base.scss, uncomment @import "grid-settings";
-7. Add Devise (https://github.com/plataformatec/devise)
+7. Add .gitignore file (https://github.com/github/gitignore/blob/master/Rails.gitignore)
+8. Add Devise (https://github.com/plataformatec/devise)
    - Add to gemfile: gem 'devise'
    - Run: bundle install
    - Generate devise: rails g devise:install
