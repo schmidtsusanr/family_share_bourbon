@@ -25,4 +25,9 @@
    - Add to gemfile: gem 'neat'
    - Run: bundle install
    - In application.scss, add after bourbon: @import "neat";
-
+6. Add Bitters (https://github.com/thoughtbot/bitters#installation)
+   - Install Bitters: gem install bitters
+   - Navigate to app/assets/stylesheets, then run: bitters install
+   - In application.scss, between bourbon and neat, add: @import "base/base";
+   - In _base.scss, uncomment @import "grid-settings";
+7. 
