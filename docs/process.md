@@ -30,4 +30,10 @@
    - Navigate to app/assets/stylesheets, then run: bitters install
    - In application.scss, between bourbon and neat, add: @import "base/base";
    - In _base.scss, uncomment @import "grid-settings";
-7. 
+7. Add Devise (https://github.com/plataformatec/devise)
+   - Add to gemfile: gem 'devise'
+   - Run: bundle install
+   - Generate devise: rails g devise:install
+   - Add action mailer default url options to config/environments/development.rb: config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+   - Add notice actions (flashes) to application.html.erb above yield, add _flashes.scss stylesheetm, and add @import "flashes"; to _base.scss.
+   -
